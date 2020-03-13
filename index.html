@@ -18,16 +18,21 @@
 
   <!-- JUMBOTRON -->
   <div class="jumbotron text-center">
-    <h1 class="display-4">Hello, world! Welcome to the Taqueria Quiz!</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-      featured content or information.</p>
-    <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-
+    <h1 class="display-4">Taqueria Quiz!</h1>
+    <p class="lead">Try to answer the following code-related questions within the time limit.</p>
     <!-- Start Quiz Button -->
-    <a type="button" id="start" class="btn btn-danger btn-lg" href="#" role="button">Start Quiz</a>
-  </div>
+    <a type="button" id="start" class="btn btn-danger btn-lg" href="#" role="button" onclick="startQuiz()">Start Quiz</a>
+    
+    <hr class="my-4">
+    <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+    <!-- Timer -->
+    <p>Timer</p>
 
+    <!--View Highscores Button-->
+    <a type="button" id="highscores" class="btn btn-primary btn-lg" href="highscores.html" role="button">View High Scores</a>
+
+  </div>
+  
   <!-- QUIZ CONTENT -->
   <div class="container" id="quiz-area">
     <!-- Quiz Questions will go here -->

@@ -1,3 +1,11 @@
+var quizData = {
+  "score":0
+}
+function startQuiz() {
+if(!localStorage.getItem("highscores")){
+localStorage.setItem("highscores", JSON.stringify([])) 
+}
+  
 // Use jQuery to build the quiz from the questions array
 
 // target the quiz area so that we can add stuff to it
@@ -25,9 +33,16 @@ for (let i = 0; i < questions.length; i++) {
   </div>
     `
   );
-
+quizArea.append(`<button class="list-group-item" onclick="submitQuiz()">Submit</button>`)
 }
-
+}
+function submitQuiz() {
+  var user = prompt("Enter your initials")
+  quizData.user = user
+  var highscores = JSON.parse(localStorage.getItem("highscores"))
+  highscores.push(quizData.user)
+  localStorage.setItem("highscores", JSON.stringify(highscores)) 
+}
 // Create a click function handler that will basically check the answer of each question
 // with the text of whatever button you clicked.
 $('.choice-btn').click(function() {
@@ -41,9 +56,11 @@ $('.choice-btn').click(function() {
   // check to see if the current text matches the answer text for their respective question number
 
   if (currentChoice == questions[currentQuestionNumber]['answer']) {
-    alert('Correct Choice!');
+  //  alert('Correct Choice!');
+  quizData.score += 1
   } else {
-    alert('Wrong Choice');
+  quizData.score -= 1
+  //  alert('Wrong Choice');
   }
-  
+  $(this).parent().parent().hide()
 });

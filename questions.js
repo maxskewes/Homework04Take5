@@ -2,9 +2,9 @@ var questions = [
     {
       title: "What is in an al pastor taco?",
       choices: [
-          "Grilled marinated beef", "Roasted chicken with jalepenos", "Pork cooked with chiles and pineapple", "Raw shrimp cured with lime juice"
+          "Grilled marinated beef", "Roasted chicken with jalepenos", "Pork cooked with chilli and pineapple", "Raw shrimp cured with lime juice"
         ],
-      answer: "Pork cooked with chiles and pineapple"
+      answer: "Pork cooked with chilli and pineapple"
     },
     {
       title: "What is carne asada comprised of?",
@@ -21,7 +21,7 @@ var questions = [
       answer: "A tortilla with octopus"
     },
     {
-      title: "Quesadilla de seviche is commmonly which of the following?",
+      title: "Quesadilla de ceviche is commmonly which of the following?",
       choices: [
         "A tortilla with cheese and lime juice cured shrimp", "A tortilla with lime juice cured chicken", "A tortilla with cheese and smoked brisket", "A sandwich with smoked fish"
         ],
