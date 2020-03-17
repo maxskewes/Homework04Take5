@@ -33,17 +33,9 @@ for (let i = 0; i < questions.length; i++) {
   </div>
     `
   );
-quizArea.append(`<button class="list-group-item" onclick="submitQuiz()">Submit</button>`)
-}
-}
-function submitQuiz() {
-  var user = prompt("Enter your initials")
-  quizData.user = user
-  var highscores = JSON.parse(localStorage.getItem("highscores"))
-  highscores.push(quizData.user)
-  localStorage.setItem("highscores", JSON.stringify(highscores)) 
-}
-// Create a click function handler that will basically check the answer of each question
+  }
+  quizArea.append(`<button class="list-group-item" onclick="submitQuiz()">Submit</button>`)
+  // Create a click function handler that will basically check the answer of each question
 // with the text of whatever button you clicked.
 $('.choice-btn').click(function() {
   console.log('Button has been clicked!');
@@ -64,3 +56,11 @@ $('.choice-btn').click(function() {
   }
   $(this).parent().parent().hide()
 });
+}
+function submitQuiz() {
+  var user = prompt("Enter your initials")
+  quizData.user = user
+  var highscores = JSON.parse(localStorage.getItem("highscores"))
+  highscores.push(quizData)
+  localStorage.setItem("highscores", JSON.stringify(highscores)) 
+}
