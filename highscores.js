@@ -1,8 +1,3 @@
-
-
-
-
-
 $(document).ready(function(){
     var userScores = JSON.parse
     (localStorage.getItem("highscores"))
@@ -15,4 +10,4 @@ $(document).ready(function(){
             `<p>${element.user} : ${element.score}`
         )
     }
-})
+});
