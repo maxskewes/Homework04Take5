@@ -7,9 +7,11 @@
 * [Javascript](https://www.javascript.com)
 
 ### Take this quiz!
+
 * [Taqueria Quiz](https://maxskewes.github.io/Taqueria-Quiz/)
 
 ### Author
+
 Maxwell Countryman Skewes
 
 ### Licence
