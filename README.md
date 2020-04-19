@@ -1,6 +1,10 @@
 # Taqueria Quiz
 ©2020
 
+A short and simple quiz app on taqueria nomenclature.
+
+![Alt text](./readmeQuiz.png?raw=true "AppImage")
+
 ### Built with
 * [HTML](https://html.com)
 * [CSS](https://www.w3schools.com/Css)
